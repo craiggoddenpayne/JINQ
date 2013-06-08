@@ -1,26 +1,30 @@
 JINQ
 ====
 
-Jinq - Javascript Intergrated Query Language Extensions.
-The library works with plain old javascript. No need for jQuery etc. 
-
-The project is still heavily work in progress, so far the following methods have been implemented:
-contains: 100%
-distinct: 100%
-
+Jinq - Javascript Intergrated Query Language Extensions.<br/>
+The library works with plain old javascript. No need for jQuery etc.<br/> 
+<br/>
+The project is still heavily work in progress, so far the following methods have been implemented:<br/>
+<ul>
+<li>contains: 100%
+<li>distinct: 100%
+</ul>
+<br/>
 The following are expected to be created soon:
-first - returns the first non null value
-last - returns the last none null value
-allByType - gets all values by a type name e.g. "number"
-reverse - reverses the array
-where - returns based on comparison criteria
-count - counts in different ways e.g. by value
-each - as in for each but uses each object rather than index
-random - randomises the order of the array
-replace - for swapping out on matching value
-index - gets the index of first instance
-indexes - gets all indexes of matching value
-grow - increses size of array
-shrink - shrinks size of array
-clone - clones the array
-remove - removes items from array
+<ul>
+<li>first - returns the first non null value
+<li>last - returns the last none null value
+<li>allByType - gets all values by a type name e.g. "number"
+<li>reverse - reverses the array
+<li>where - returns based on comparison criteria
+<li>count - counts in different ways e.g. by value
+<li>each - as in for each but uses each object rather than index
+<li>random - randomises the order of the array
+<li>replace - for swapping out on matching value
+<li>index - gets the index of first instance
+<li>indexes - gets all indexes of matching value
+<li>grow - increses size of array
+<li>shrink - shrinks size of array
+<li>clone - clones the array
+<li>remove - removes items from array
+</ul>
