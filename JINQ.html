@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JINQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+    
+    <script type="text/javascript" src="JINQ.js"></script>
+    <script type="text/javascript" src="JINQ_Support.js"></script>
+    <script type="text/javascript" src="jquery.1.10.js"></script>
+  </head>
+  <body>
+
+    <div class="container-narrow">
+      
+
+      <div class="jumbotron">
+        <h1>JINQ</h1>
+        <p class="lead">Javascript Intergrated Query Language</p>
+        <p class="">Javascript extensions, that allow array manipulation though use of simple methods</p>
+        <a class="btn btn-success" href="JINQ.js">Uncompressed</a>
+        <a class="btn btn-success" href="JINQ.js">Minified</a>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+		<div class="span12">        
+			Examples and documentation of how to use...
+		</div>
+        <div class="span6">
+          <h4>distinct</h4>
+          <p>distinct removes all duplicate elements, only returning the the distinct elements.</p>
+          <p class="text-info">Overloads</p>
+          <p>param1 (boolean) = byValueAndType. if false values are checked for equality of value. if true values are checked for equality of value <i>and type</i></p>
+          <div class="well well-small">
+            <p>var items = [1, 2, 3, "1", "2", 3];</p>
+            <p>items.distinct();</p>
+            <p class="text-success distinct1"></p>
+            <p>items.distinct(false);</p>
+            <p class="text-success distinct2"></p>
+            <p>items.distinct(true);</p>
+            <p class="text-success distinct3"></p>
+          </div>
+        </div>
+
+        <div class="span6">
+          <h4>contains</h4>
+          <p>contains returns true or false, indicating whether the array contains a matching argument</p>
+          <p class="text-info">Overloads</p>
+          <p>
+            param1 (object) = value.<br/>the value that is checked for equality.<br/>
+            param2 (boolean) = byValueAndType. if false values are checked for equality of value. if true values are checked for equality of value <i>and type</i>
+          </p>
+          <div class="well well-small">
+            <p>var items = [1, 2, "3"];</p>
+            <p>items.contains("3");</p>
+            <p class="text-success contains1"></p>
+            <p>items.contains(3);</p>
+            <p class="text-success contains2"></p>
+            <p>items.contains(3, true);</p>
+            <p class="text-success contains3"></p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>Craig Payne</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <script type="text/javascript">
+      $().ready(function(){
+        JINQ_Support();
+      });
+    </script>
+  </body>
+</html>
