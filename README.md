@@ -17,9 +17,10 @@ where - returns based on comparison criteria
 count - counts in different ways e.g. by value
 each - as in for each but uses each object rather than index
 random - randomises the order of the array
-swap - for swapping out on matching value
+replace - for swapping out on matching value
 index - gets the index of first instance
 indexes - gets all indexes of matching value
 grow - increses size of array
 shrink - shrinks size of array
- 
+clone - clones the array
+remove - removes items from array
