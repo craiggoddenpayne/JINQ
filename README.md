@@ -2,7 +2,7 @@ JINQ
 ====
 
 Jinq - Javascript Intergrated Query Language Extensions.<br/>
-The library works with plain old javascript. No need for jQuery etc.<br/> 
+The library works with plain old javascript. No need for jQuery etc. For documentation, use JINQ.html within the repository<br/> 
 <br/>
 The project is still heavily work in progress, so far the following methods have been implemented:<br/>
 <ul>
