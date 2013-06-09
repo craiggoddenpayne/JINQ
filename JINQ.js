@@ -26,6 +26,40 @@ Array.prototype.distinct = function(byValueAndType){
 	return results;
 };
 
+Array.prototype.first = function(ignoreNullOrDefined){
+	if(!ignoreNullOrDefined){
+		return this[0];
+	}
+
+	for(var i=0; i< this.length; i++){
+		if(this[i] !== null && this[i] !== undefined){
+			return this[i];
+		}
+	}
+};
+
+Array.prototype.last = function(ignoreNullOrDefined){
+	var temp = this.reverse();
+	if(!ignoreNullOrDefined){
+		return temp[0];
+	}
+	for(var i=0; i< this.length; i++){
+		if(temp[i] !== null && temp[i] !== undefined){
+			return temp[i];
+		}
+	}
+};
+
+Array.prototype.allByType = function(typeName){
+	var results = [];
+	for(var i=0; i < this.length; i++){
+		if(typeof this[i] == typeName){
+			results.push(this[i]);
+		}
+	}
+	return results;
+};
+
 Array.prototype.__comparitor = function(valueAndType){
 	if(valueAndType){
 		return function(x, y){

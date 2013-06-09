@@ -83,42 +83,93 @@
 		<div class="span12">        
 			Examples and documentation of how to use...
 		</div>
-        <div class="span6">
-          <h4>distinct</h4>
-          <p>distinct removes all duplicate elements, only returning the the distinct elements.</p>
-          <p class="text-info">Overloads</p>
-          <p>param1 (boolean) = byValueAndType. if false values are checked for equality of value. if true values are checked for equality of value <i>and type</i></p>
-          <div class="well well-small">
-            <p>var items = [1, 2, 3, "1", "2", 3];</p>
-            <p>items.distinct();</p>
-            <p class="text-success distinct1"></p>
-            <p>items.distinct(false);</p>
-            <p class="text-success distinct2"></p>
-            <p>items.distinct(true);</p>
-            <p class="text-success distinct3"></p>
-          </div>
-        </div>
 
-        <div class="span6">
-          <h4>contains</h4>
-          <p>contains returns true or false, indicating whether the array contains a matching argument</p>
-          <p class="text-info">Overloads</p>
-          <p>
-            param1 (object) = value.<br/>the value that is checked for equality.<br/>
-            param2 (boolean) = byValueAndType. if false values are checked for equality of value. if true values are checked for equality of value <i>and type</i>
-          </p>
-          <div class="well well-small">
-            <p>var items = [1, 2, "3"];</p>
-            <p>items.contains("3");</p>
-            <p class="text-success contains1"></p>
-            <p>items.contains(3);</p>
-            <p class="text-success contains2"></p>
-            <p>items.contains(3, true);</p>
-            <p class="text-success contains3"></p>
-          </div>
+      <div class="span12">
+        <h4>distinct</h4>
+        <p>distinct removes all duplicate elements, only returning the the distinct elements.</p>
+        <p class="text-info">Overloads</p>
+        <p>param1 (boolean) = byValueAndType. if false values are checked for equality of value. if true values are checked for equality of value <i>and type</i></p>
+        <div class="well well-small">
+          <p>var items = [1, 2, 3, "1", "2", 3];</p>
+          <p>items.distinct();</p>
+          <p class="text-success distinct1"></p>
+          <p>items.distinct(false);</p>
+          <p class="text-success distinct2"></p>
+          <p>items.distinct(true);</p>
+          <p class="text-success distinct3"></p>
         </div>
       </div>
 
+      <div class="span12">
+        <h4>contains</h4>
+        <p>contains returns true or false, indicating whether the array contains a matching argument</p>
+        <p class="text-info">Overloads</p>
+        <p>
+          param1 (object) = value.<br/>the value that is checked for equality.<br/>
+          param2 (boolean) = byValueAndType. if false values are checked for equality of value. if true values are checked for equality of value <i>and type</i>
+        </p>
+        <div class="well well-small">
+          <p>var items = [1, 2, "3"];</p>
+          <p>items.contains("3");</p>
+          <p class="text-success contains1"></p>
+          <p>items.contains(3);</p>
+          <p class="text-success contains2"></p>
+          <p>items.contains(3, true);</p>
+          <p class="text-success contains3"></p>
+        </div>
+      </div>
+    
+      <div class="span12">
+          <h4>first</h4>
+          <p>gets the first element of the array</p>
+          <p class="text-info">Overloads</p>
+          <p>
+            param1 (boolean) = ignoreNullOrUndefined.<br/>ignores all null or undefined values.<br/>
+          </p>
+          <div class="well well-small">
+            <p>var items = [null, 1, 2, "3"];</p>
+            <p>items.first();</p>
+            <p class="text-success first1"></p>
+            <p>items.first(true);</p>
+            <p class="text-success first2"></p>
+          </div>
+        </div>
+
+        <div class="span12">
+          <h4>last</h4>
+          <p>gets the last element of the array</p>
+          <p class="text-info">Overloads</p>
+          <p>
+            param1 (boolean) = ignoreNullOrUndefined.<br/>ignores all null or undefined values.<br/>
+          </p>
+          <div class="well well-small">
+            <p>var items = [1, 2, "3", null];</p>
+            <p>items.last();</p>
+            <p class="text-success last1"></p>
+            <p>items.last(true);</p>
+            <p class="text-success last2"></p>
+          </div>
+        </div>
+
+        <div class="span12">
+          <h4>allByType</h4>
+          <p>gets all elements that match the given type name</p>
+          <p class="text-info">Overloads</p>
+          <p>
+            param1 (String) = typename.<br/>the typename that should match<br/>
+          </p>
+          <div class="well well-small">
+            <p>var items = [1, 2, "3", "a", "b", {c:1}, 0xF6];</p>
+            <p>items.allByType("string");</p>
+            <p class="text-success allByType1"></p>
+            <p>items.allByType("number");</p>
+            <p class="text-success allByType2"></p>
+            <p>items.allByType("object");</p>
+            <p class="text-success allByType3"></p>
+          </div>
+        </div>
+
+      </div>
       <hr>
 
       <div class="footer">

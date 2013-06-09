@@ -19,4 +19,27 @@ function JINQ_Support(){
 	$(".contains2").text("result: " + JSON.stringify(contains2));  
 	$(".contains3").text("result: " + JSON.stringify(contains3));  
 
+	//first
+	var items = [null, 1, 2, "3"];
+	var first1 = items.first();
+	var first2 = items.first(true);
+	$(".first1").text("result: " + JSON.stringify(first1));  
+	$(".first2").text("result: " + JSON.stringify(first2));  
+	
+	//last
+	var items = [1, 2, "3", null];
+	var last1 = items.last();
+	var last2 = items.last(true);
+	$(".last1").text("result: " + JSON.stringify(last1));  
+	$(".last2").text("result: " + JSON.stringify(last2));  
+	
+	//allByType
+	var items = [1, 2, "3", "a", "b", {c:1}, 0xF6];
+	var allByType1 = items.allByType("string");
+	var allByType2 = items.allByType("number");
+	var allByType3 = items.allByType("object");
+	$(".allByType1").text("result: " + JSON.stringify(allByType1));  
+	$(".allByType2").text("result: " + JSON.stringify(allByType2));  
+	$(".allByType3").text("result: " + JSON.stringify(allByType3));  
+	
 };  
